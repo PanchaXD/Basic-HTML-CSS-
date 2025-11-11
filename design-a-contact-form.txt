@@ -1,0 +1,85 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Contact Form</title>
+    <link href="styles.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="form-container">
+        <form>
+            <h2>Contact Us</h2>
+            <label for="name">Name:<input type="text" id="name" name="name" required /></label>
+            <label for="email">Email:<input type="email" id="email" name="email" required /></label>
+            <label for="message">Message:
+                <textarea id="message" name="message" required>
+                </textarea>
+            </label>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, #90E0EF, #CAF0F8);
+  font-family: Tahoma;
+  font-size: 16px; 
+}
+
+h2{
+  margin: 1em auto;
+  text-align: center;
+}
+
+label{
+  display: block;
+  margin: 0.5rem;
+  color: grey;
+}
+
+.form-container{
+  width: 60vw;
+  max-width: 500px;
+  min-width: 300px;
+  margin: 0 auto;
+  padding: 2em;
+  background-color: white;
+  border-radius: 5px;
+}
+
+input, textarea{
+  width: 100%;
+  padding: 5px;
+  margin: auto;
+}
+
+button{
+  display: block;
+  margin: 1em auto;
+  font-size: 1.1rem;
+  height: 2em;
+  border-radius: 5px;
+  background-color: #3BB143;
+  border: none;
+  color: white;
+}
+
+button:hover{
+  background-color: #0B6623;
+}
+
+** end of styles.css **
+
